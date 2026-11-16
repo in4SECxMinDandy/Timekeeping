@@ -1,0 +1,14 @@
+node_modules
+dist
+data
+tests
+docs
+*.log
+.env
+.env.*
+.git
+.gitignore
+.playwright-mcp
+screenshots
+Dockerfile
+docker-compose.yml

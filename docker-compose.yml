@@ -1,0 +1,13 @@
+services:
+  chamcong:
+    build: .
+    image: chamcong-clone:latest
+    container_name: chamcong-clone
+    ports:
+      - '3001:3001'
+    volumes:
+      - ./data:/data
+    environment:
+      DATA_DIR: /data
+      PORT: '3001'
+    restart: unless-stopped
